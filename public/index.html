@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Panto Furniture</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <header class="hero-section">
+    <!-- <nav class="navbar navbar-expand-lg navbar-dark custom-nav">
+      <div class="container">
+        <a class="navbar-brand fw-bold fs-3" href="#">Panto</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item"><a class="nav-link" href="#products">Furniture</a></li>
+            <li class="nav-item"><a class="nav-link" href="#experience">Shop</a></li>
+            <li class="nav-item"><a class="nav-link" href="#testimonials">About Us</a></li>
+            <li class="nav-item"><a class="nav-link admin-link" href="/admin">Admin Panel</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav> -->
+    <nav class="custom-navbar">
+      <div class="container nav-inner">
+
+        <!-- LOGO -->
+        <a href="#" class="logo">Panto</a>
+
+        <!-- HAMBURGER -->
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <!-- MENU -->
+        <ul class="nav-menu" id="navMenu">
+          <li class="dropdown-item-custom">
+            <a href="javascript:void(0)" class="dropdown-toggle-custom">
+              Furniture
+            </a>
+
+            <ul class="submenu">
+              <li><a href="#">Chair</a></li>
+              <li><a href="#">Table</a></li>
+              <li><a href="#">Sofa</a></li>
+            </ul>
+          </li>
+
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+
+      </div>
+    </nav>
+    <div class="container hero-content text-center text-white">
+      <h1>Make Your Interior More<br>Minimalistic & Modern</h1>
+      <p>
+        Turn your room with panto into a lot more minimalist<br> and modern with ease and speed
+      </p>
+      <!-- <div class="hero-search">
+        <input type="text" placeholder="Search furniture" />
+        <button>🔍</button>
+      </div> -->
+    </div>
+  </header>
+
+
+
+  <section class="why-section">
+    <div class="container why-container">
+      <div class="row why-row">
+
+        <div class="col-lg-3 col-md-12 why-left">
+          <h2 class="why-title">Why<br>Choosing Us</h2>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-12 why-col">
+          <div class="why-card">
+            <h4>Luxury facilities</h4>
+            <p>
+              The advantage of hiring a workspace with us is that gives you comfortable
+              service and all-around facilities.
+            </p>
+            <a href="#">More Info</a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-12 why-col">
+          <div class="why-card">
+            <h4>Affordable Price</h4>
+            <p>
+              You can get a workspace of the highest quality at an affordable price and still enjoy the facilities with
+              ease.
+
+            </p>
+            <a href="#">More Info</a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-12 why-col">
+          <div class="why-card">
+            <h4>Many Choices</h4>
+            <p>
+              We provide many unique work space choices so that you can choose the
+              workspace to your liking.
+            </p>
+            <a href="#">More Info</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="product-section" id="products">
+    <div class="container product-container">
+      <h2 class="section-title text-center">Best Selling Product</h2>
+
+      <div class="product-wrapper">
+        <button class="arrow left" id="leftBtn">&#8592;</button>
+
+        <div class="product-scroll-outer">
+          <div class="product-scroll" id="productList"></div>
+        </div>
+
+        <button class="arrow right" id="rightBtn">&#8594;</button>
+      </div>
+
+      <div class="text-center mt-4">
+        <a href="#" class="view-all">View All</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- <section class="experience-section py-5" id="experience">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <div class="experience-image-wrap">
+            <img src="/images/about.jpg" class="img-fluid experience-image" alt="experience" />
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <span class="small-orange">EXPERIENCES</span>
+          <h2>We Provide You The Best Experience</h2>
+          <p>
+            You don’t have to worry about the result because all of these interiors are made by people who are
+            professionals in their fields with an elegant and luxurious style and with premium quality materials.
+          </p>
+          <a href="#" class="orange-link">More Info</a>
+        </div>
+      </div>
+    </div>
+  </section> -->
+  <section class="experience-section" id="experience">
+    <div class="container experience-container">
+      <div class="row align-items-center experience-row">
+
+        <div class="col-lg-6 col-md-12 experience-image-col">
+          <div class="experience-image-box">
+            <img src="/images/experience.png" alt="Experience" class="experience-image" />
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-12 experience-content-col">
+          <div class="experience-content">
+            <h2>We Provide You The<br>Best Experience</h2>
+            <p>
+              You don’t have to worry about the result because all of these
+              interiors are made by people who are professionals in their fields
+              with an elegant and luxurious style and with premium quality
+              materials
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="materials-section py-5">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <!-- <span class="small-orange">MATERIALS</span> -->
+          <h2>Very Serious Materials For Making Furniture</h2>
+          <p>
+            Because panto was very serious about designing furniture for our environment, using a very expensive and
+            famous capital but at a relatively low price.
+          </p>
+
+        </div>
+        <div class="col-lg-6">
+          <div class="materials-grid">
+            <img src="https://images.unsplash.com/photo-1484101403633-562f891dc89a?auto=format&fit=crop&w=600&q=80"
+              alt="">
+            <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=600&q=80"
+              alt="">
+            <img class="wide"
+              src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1000&q=80"
+              alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="testimonial-section" id="testimonials">
+    <div class="container testimonial-container">
+      <div class="testimonial-heading text-center">
+        <h2>Our Client Reviews</h2>
+      </div>
+
+      <div class="testimonial-box-wrap">
+        <div id="testimonialList" class="testimonial-center-list"></div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer-section">
+    <div class="container footer-container">
+      <div class="row footer-row">
+
+        <div class="col-lg-4 col-md-6 footer-col footer-brand-col">
+          <h3 class="footer-logo">Panto</h3>
+          <p class="footer-desc">
+            The advantage of hiring a workspace with us is that gives you comfortable
+            service and all-around facilities.
+          </p>
+        </div>
+
+        <div class="col-lg-2 col-md-6 footer-col">
+          <h5 class="footer-title">Services</h5>
+          <ul class="footer-links">
+            <li><a href="#">Email Marketing</a></li>
+            <li><a href="#">Campaigns</a></li>
+            <li><a href="#">Branding</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-6 footer-col">
+          <h5 class="footer-title">Furniture</h5>
+          <ul class="footer-links">
+            <li><a href="#">Beds</a></li>
+            <li><a href="#">Chair</a></li>
+            <li><a href="#">All</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-6 footer-col">
+          <h5 class="footer-title">Follow Us</h5>
+          <div class="footer-social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

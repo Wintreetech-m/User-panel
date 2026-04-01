@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="contact-page">
+  <header>
+    <nav class="custom-navbar">
+      <div class="container nav-inner">
+
+        <!-- LOGO -->
+        <a href="/index.html" class="logo">Panto</a>
+
+        <!-- HAMBURGER -->
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <!-- MENU -->
+        <ul class="nav-menu" id="navMenu">
+          <li class="dropdown-item-custom">
+            <a href="javascript:void(0)" class="dropdown-toggle-custom">
+              Furniture
+            </a>
+
+            <ul class="submenu">
+              <li><a href="#">Chair</a></li>
+              <li><a href="#">Table</a></li>
+              <li><a href="#">Sofa</a></li>
+            </ul>
+          </li>
+
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+
+      </div>
+    </nav>
+  </header>
+  <section class="contact-page-section">
+    <div class="contact-page-container">
+      <h2 class="contact-page-title">
+        Get in <span>Touch</span>
+      </h2>
+
+      <form class="contact-page-form" id="contactForm">
+        <input type="text" id="contactName" placeholder="Name *" required>
+        <input type="email" id="contactEmail" placeholder="Email" required>
+        <input type="text" id="contactPhone" placeholder="Phone number *" required>
+        <textarea id="contactMessage" placeholder="Type here" rows="6" required></textarea>
+        <button type="submit">SEND</button>
+      </form>
+
+      <p id="contactMsg" style="margin-top:15px;"></p>
+    </div>
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('#contactForm').on('submit', function (e) {
+        e.preventDefault();
+
+        const data = {
+          name: $('#contactName').val().trim(),
+          email: $('#contactEmail').val().trim(),
+          phone: $('#contactPhone').val().trim(),
+          message: $('#contactMessage').val().trim()
+        };
+
+        $.ajax({
+          url: '/api/contact',
+          type: 'POST',
+          data: JSON.stringify(data),
+          contentType: 'application/json',
+          success: function (res) {
+            $('#contactMsg').css('color', 'green').text('Message sent successfully');
+            $('#contactForm')[0].reset();
+          },
+          error: function (xhr) {
+            $('#contactMsg').css('color', 'red').text('Failed to send message');
+            console.log(xhr.responseText);
+          }
+        });
+      });
+    });
+  </script>
+
+</body>
+
+</html>
